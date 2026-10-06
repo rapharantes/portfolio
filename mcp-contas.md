@@ -1,4 +1,4 @@
-# mcp-contas
+# Servidor MCP para gestão de tráfego: Google Ads, Meta Ads, Instagram e LinkedIn Ads
 
 Servidor MCP que dá a um agente de IA, como o Claude, acesso a várias contas ao mesmo tempo: Google Ads, Meta Ads, LinkedIn Ads, Instagram, Google Drive e Google Calendar.
 
@@ -24,7 +24,7 @@ Um painel web conecta cada conta por OAuth.
 
 ```mermaid
 flowchart LR
-  C["Claude ou outro cliente MCP"] -- "Streamable HTTP" --> S["mcp-contas na Vercel"]
+  C["Claude ou outro cliente MCP"] -- "Streamable HTTP" --> S["Servidor MCP na Vercel"]
   S --> KV[("Vercel KV: tokens cifrados")]
   S --> GA["Google Ads API"]
   S --> MA["Meta Marketing API"]
